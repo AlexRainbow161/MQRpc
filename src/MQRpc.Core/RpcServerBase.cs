@@ -8,6 +8,9 @@ using static MQRpc.Core.Utils.TypeUtils;
 
 namespace MQRpc.Core
 {
+    /// <summary>
+    /// That base class of RpcServer contains logic that can instantiate and invoke command handlers
+    /// </summary>
     public abstract class RpcServerBase : IRpcServer
     {
         private readonly IServiceProvider _serviceProvider;
