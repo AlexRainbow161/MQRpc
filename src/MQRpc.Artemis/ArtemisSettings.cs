@@ -1,12 +1,13 @@
-﻿namespace MQRpc.Artemis
+﻿using System;
+
+namespace MQRpc.Artemis
 {
-    public class ArtemisServerSettings
+    public class ArtemisSettings
     {
-
-    }
-
-    public class ArtemisClientSettings
-    {
-
+        public string BrokerUri { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public string RpcQueueName { get; set; }
+        public TimeSpan Timeout { get; set; }
     }
 }
